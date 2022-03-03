@@ -1,0 +1,23 @@
+{
+  "name": "@stellar-expert/liquidity-pool-utils",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Utilities for operations with Stellar liquidity pools",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stellar-expert/liquidity-pool-utils.git"
+  },
+  "author": "orbitlens <orbit@stellar.expert>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stellar-expert/liquidity-pool-utils/issues"
+  },
+  "peerDependencies": {
+    "bignumber.js": ">= 4",
+    "stellar-sdk": ">= 9"
+  },
+  "dependencies": {
+    "@stellar-expert/formatter": "github:stellar-expert/formatter"
+  }
+}
