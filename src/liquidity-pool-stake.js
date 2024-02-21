@@ -10,7 +10,7 @@ export function estimateLiquidityPoolStakeValue(shares, reserves, totalShares) {
     if (!(shares > 0) || !(totalShares > 0))
         return null
     return reserves.map(reserve => {
-        const value = toStroops(shares) * toStroops(reserve) * 10000000n / toStroops(totalShares)
+        const value = toStroops(shares) * toStroops(reserve) / toStroops(totalShares)
         return fromStroops(value)
     })
 }
