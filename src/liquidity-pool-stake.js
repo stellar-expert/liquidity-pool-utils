@@ -1,4 +1,4 @@
-import {fromStroops} from '@stellar-expert/formatter'
+import {fromStroops, toStroops} from '@stellar-expert/formatter'
 /**
  * Estimate amounts of liquidity pool tokens based on the share of the pool
  * @param {Number|String} shares - Amount of pool shares that belong to the account
@@ -10,7 +10,7 @@ export function estimateLiquidityPoolStakeValue(shares, reserves, totalShares) {
     if (!(shares > 0) || !(totalShares > 0))
         return null
     return reserves.map(reserve => {
-        const value = BigInt(shares) * BigInt(reserve) * 10000000n / BigInt(totalShares)
+        const value = toStroops(shares) * toStroops(reserve) * 10000000n / toStroops(totalShares)
         return fromStroops(value)
     })
 }

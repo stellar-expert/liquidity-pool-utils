@@ -1,6 +1,6 @@
 {
   "name": "@stellar-expert/liquidity-pool-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utilities for operations with Stellar liquidity pools",
   "main": "index.js",
   "repository": {
